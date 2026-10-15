@@ -66,3 +66,8 @@ Do **not** set `PORT`.
 | Visible change (Task D) | change `APP_VERSION` in `app/main.py` |
 
 Never commit `.env`. It is already listed in `.gitignore` and `.dockerignore`.
+
+## Task A status
+
+`.github/workflows/ci-cd.yml` runs `ruff check .` and `pytest -q` on every
+pull request and on every push to `main`.
