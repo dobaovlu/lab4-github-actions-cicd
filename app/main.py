@@ -10,7 +10,7 @@ import psycopg
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
-APP_VERSION = "1.1.0"  # change this, merge, and watch the pipeline take it live
+APP_VERSION = "1.2.0"  # change this, merge, and watch the pipeline take it live
 APP_ENV = os.environ.get("APP_ENV", "development")
 DATABASE_URL = os.environ["DATABASE_URL"]  # crash at start if it is missing
 
