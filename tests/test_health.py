@@ -11,7 +11,7 @@ client = TestClient(app)
 
 def test_health_ok():
     r = client.get("/health")
-    assert r.status_code == 200
+    assert r.status_code == 201   # was 200 — deliberate failure for Lab 4
     assert r.json() == {"status": "ok"}
 
 
