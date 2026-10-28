@@ -1,6 +1,9 @@
 __pycache__/
 *.pyc
 .venv/
-.env
 .pytest_cache/
 .ruff_cache/
+# every local env file (.env, .env.cloud, ...) — but the example IS committed
+.env
+.env.*
+!.env.example
